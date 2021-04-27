@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/google-auth-library-python.git",
-        "sha": "f062da8392c32fb3306cdc6e4dbae78212aa0dc7"
+        "sha": "621f54bd70eded4f68d2caa9b894d5504117452b"
       }
     },
     {
@@ -16,8 +16,6 @@
     }
   ],
   "generatedFiles": [
-    ".kokoro/build.sh",
-    ".kokoro/continuous/common.cfg",
     ".kokoro/continuous/continuous.cfg",
     ".kokoro/docker/docs/Dockerfile",
     ".kokoro/docker/docs/fetch_gpg_keys.sh",
@@ -25,7 +23,6 @@
     ".kokoro/docs/docs-presubmit.cfg",
     ".kokoro/docs/docs.cfg",
     ".kokoro/populate-secrets.sh",
-    ".kokoro/presubmit/common.cfg",
     ".kokoro/presubmit/presubmit.cfg",
     ".kokoro/publish-docs.sh",
     ".kokoro/release.sh",
