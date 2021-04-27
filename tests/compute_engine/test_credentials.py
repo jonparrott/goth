@@ -14,7 +14,7 @@
 import base64
 import datetime
 
-import mock
+from unittest import mock
 import pytest
 import responses
 

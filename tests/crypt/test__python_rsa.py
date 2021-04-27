@@ -15,7 +15,7 @@
 import json
 import os
 
-import mock
+from unittest import mock
 from pyasn1_modules import pem
 import pytest
 import rsa

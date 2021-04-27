@@ -16,7 +16,7 @@ import datetime
 import os
 import sys
 
-import mock
+from unittest import mock
 import oauth2client.client
 import oauth2client.contrib.gce
 import oauth2client.service_account

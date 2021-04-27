@@ -18,7 +18,7 @@ import os
 import pickle
 import sys
 
-import mock
+from unittest import mock
 import pytest
 
 from google.auth import _helpers

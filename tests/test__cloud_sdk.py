@@ -17,7 +17,7 @@ import json
 import os
 import subprocess
 
-import mock
+from unittest import mock
 import pytest
 
 from google.auth import _cloud_sdk
