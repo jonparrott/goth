@@ -118,7 +118,13 @@ def _token_endpoint_request_no_throw(
             if hasattr(response.data, "decode")
             else response.data
         )
-        response_data = json.loads(response_body)
+        try:
+            response_data = json.loads(response_body)
+        except (KeyError, ValueError):
+            # raise if the response can't be json decoded.
+            error_details = response_body
+            raise exceptions.RefreshError(error_details, response_body)
+
 
         if response.status == http_client.OK:
             break
