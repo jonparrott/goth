@@ -26,7 +26,7 @@ import aiohttp
 from google.auth.transport import _aiohttp_requests as aiohttp_requests
 from system_tests.system_tests_sync import conftest as sync_conftest
 
-ASYNC_REQUESTS_SESSION = aiohttp.ClientSession()
+ASYNC_REQUESTS_SESSION = aiohttp.ClientSession(auto_decompress=False)
 
 ASYNC_REQUESTS_SESSION.verify = False
 TOKEN_INFO_URL = "https://www.googleapis.com/oauth2/v3/tokeninfo"
